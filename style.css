@@ -1,0 +1,93 @@
+.container {
+  width: 800px;
+  margin: 1.5em auto;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2rem;
+  color: #0d0d0d;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+
+  body {
+    font-size: 12px;
+    line-height: 1.1rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 700;
+  color: #303030;
+  margin-bottom: 1.5em;
+}
+
+.card-white {
+  background-color: #ffffff;
+  margin-bottom: 1.5em;
+  padding: 1em 2em;
+  box-shadow: 0 2px 8px #7f00ff20;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 0.25em;
+  font-size: 1.75em;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* INTERACTIVE ELEMENTS */
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #7f00ff;
+  transition: 0.3s ease;
+}
+
+.btn-purple {
+  border: 2px solid #7f00ff;
+  font-weight: 400;
+  margin: 1.2em auto;
+  width: max-content;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  box-shadow: 0 2px 4px #00000020;
+  transition: 0.4s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+  a:hover {
+    color: #a567ff;
+  }
+
+  .btn-purple:hover {
+    border: 2px solid #a567ff;
+  }
+}
